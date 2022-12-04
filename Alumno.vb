@@ -8,7 +8,7 @@
 
 
     'indica si los datos ingresados estan completos
-    Private datosCompletos As Boolean
+    Public datosCompletos As Boolean
 
     'metodos de prioridad
     'metodo para nombre del alumno
