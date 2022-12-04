@@ -25,6 +25,9 @@ Partial Class Form1
         Me.grpCodigo = New System.Windows.Forms.GroupBox()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.btnGenerar = New System.Windows.Forms.Button()
+        Me.grpDatos = New System.Windows.Forms.GroupBox()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtGenero = New System.Windows.Forms.TextBox()
@@ -33,10 +36,8 @@ Partial Class Form1
         Me.lblGenero = New System.Windows.Forms.Label()
         Me.lblDireccion = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.grpCodigo.SuspendLayout()
+        Me.grpDatos.SuspendLayout()
         Me.SuspendLayout()
         '
         'grpCodigo
@@ -68,128 +69,133 @@ Partial Class Form1
         Me.btnGenerar.Text = "Generar Codigo"
         Me.btnGenerar.UseVisualStyleBackColor = True
         '
+        'grpDatos
+        '
+        Me.grpDatos.Controls.Add(Me.btnSalir)
+        Me.grpDatos.Controls.Add(Me.btnAgregar)
+        Me.grpDatos.Controls.Add(Me.txtApellido)
+        Me.grpDatos.Controls.Add(Me.txtDireccion)
+        Me.grpDatos.Controls.Add(Me.txtGenero)
+        Me.grpDatos.Controls.Add(Me.txtNombre)
+        Me.grpDatos.Controls.Add(Me.lblApellido)
+        Me.grpDatos.Controls.Add(Me.lblGenero)
+        Me.grpDatos.Controls.Add(Me.lblDireccion)
+        Me.grpDatos.Controls.Add(Me.lblNombre)
+        Me.grpDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpDatos.Location = New System.Drawing.Point(8, 131)
+        Me.grpDatos.Name = "grpDatos"
+        Me.grpDatos.Size = New System.Drawing.Size(758, 307)
+        Me.grpDatos.TabIndex = 21
+        Me.grpDatos.TabStop = False
+        Me.grpDatos.Text = "Datos Alumno"
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.Location = New System.Drawing.Point(645, 260)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(75, 32)
+        Me.btnSalir.TabIndex = 29
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Location = New System.Drawing.Point(507, 260)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(75, 32)
+        Me.btnAgregar.TabIndex = 28
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
         'txtApellido
         '
-        Me.txtApellido.Location = New System.Drawing.Point(99, 199)
+        Me.txtApellido.Location = New System.Drawing.Point(163, 91)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(311, 20)
-        Me.txtApellido.TabIndex = 17
+        Me.txtApellido.Size = New System.Drawing.Size(311, 24)
+        Me.txtApellido.TabIndex = 27
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(99, 313)
+        Me.txtDireccion.Location = New System.Drawing.Point(163, 205)
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(311, 20)
-        Me.txtDireccion.TabIndex = 16
+        Me.txtDireccion.Size = New System.Drawing.Size(311, 24)
+        Me.txtDireccion.TabIndex = 26
         '
         'txtGenero
         '
-        Me.txtGenero.Location = New System.Drawing.Point(99, 257)
+        Me.txtGenero.Location = New System.Drawing.Point(163, 149)
         Me.txtGenero.Name = "txtGenero"
-        Me.txtGenero.Size = New System.Drawing.Size(88, 20)
-        Me.txtGenero.TabIndex = 15
+        Me.txtGenero.Size = New System.Drawing.Size(88, 24)
+        Me.txtGenero.TabIndex = 25
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(99, 148)
+        Me.txtNombre.Location = New System.Drawing.Point(163, 43)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(311, 20)
-        Me.txtNombre.TabIndex = 14
+        Me.txtNombre.Size = New System.Drawing.Size(311, 24)
+        Me.txtNombre.TabIndex = 24
         '
         'lblApellido
         '
         Me.lblApellido.AutoSize = True
-        Me.lblApellido.Location = New System.Drawing.Point(38, 199)
+        Me.lblApellido.Location = New System.Drawing.Point(85, 94)
         Me.lblApellido.Name = "lblApellido"
-        Me.lblApellido.Size = New System.Drawing.Size(44, 13)
-        Me.lblApellido.TabIndex = 13
+        Me.lblApellido.Size = New System.Drawing.Size(59, 18)
+        Me.lblApellido.TabIndex = 23
         Me.lblApellido.Text = "Apellido"
         '
         'lblGenero
         '
         Me.lblGenero.AutoSize = True
-        Me.lblGenero.Location = New System.Drawing.Point(40, 257)
+        Me.lblGenero.Location = New System.Drawing.Point(87, 152)
         Me.lblGenero.Name = "lblGenero"
-        Me.lblGenero.Size = New System.Drawing.Size(42, 13)
-        Me.lblGenero.TabIndex = 12
+        Me.lblGenero.Size = New System.Drawing.Size(58, 18)
+        Me.lblGenero.TabIndex = 22
         Me.lblGenero.Text = "Genero"
         '
         'lblDireccion
         '
         Me.lblDireccion.AutoSize = True
-        Me.lblDireccion.Location = New System.Drawing.Point(38, 313)
+        Me.lblDireccion.Location = New System.Drawing.Point(85, 208)
         Me.lblDireccion.Name = "lblDireccion"
-        Me.lblDireccion.Size = New System.Drawing.Size(52, 13)
-        Me.lblDireccion.TabIndex = 11
+        Me.lblDireccion.Size = New System.Drawing.Size(71, 18)
+        Me.lblDireccion.TabIndex = 21
         Me.lblDireccion.Text = "Direccion"
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(38, 148)
+        Me.lblNombre.Location = New System.Drawing.Point(85, 43)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(44, 13)
-        Me.lblNombre.TabIndex = 10
+        Me.lblNombre.Size = New System.Drawing.Size(62, 18)
+        Me.lblNombre.TabIndex = 20
         Me.lblNombre.Text = "Nombre"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(183, 374)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 32)
-        Me.Button1.TabIndex = 18
-        Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(447, 374)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 32)
-        Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Salir"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 104)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 13)
-        Me.Label1.TabIndex = 20
-        Me.Label1.Text = "Datos Alumno"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.txtApellido)
-        Me.Controls.Add(Me.txtDireccion)
-        Me.Controls.Add(Me.txtGenero)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.lblApellido)
-        Me.Controls.Add(Me.lblGenero)
-        Me.Controls.Add(Me.lblDireccion)
-        Me.Controls.Add(Me.lblNombre)
+        Me.Controls.Add(Me.grpDatos)
         Me.Controls.Add(Me.grpCodigo)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.grpCodigo.ResumeLayout(False)
         Me.grpCodigo.PerformLayout()
+        Me.grpDatos.ResumeLayout(False)
+        Me.grpDatos.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents grpCodigo As GroupBox
     Friend WithEvents txtCodigo As TextBox
     Friend WithEvents btnGenerar As Button
+    Friend WithEvents grpDatos As GroupBox
+    Friend WithEvents btnSalir As Button
+    Friend WithEvents btnAgregar As Button
     Friend WithEvents txtApellido As TextBox
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents txtGenero As TextBox
@@ -198,7 +204,4 @@ Partial Class Form1
     Friend WithEvents lblGenero As Label
     Friend WithEvents lblDireccion As Label
     Friend WithEvents lblNombre As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
 End Class
